@@ -3,11 +3,11 @@ package list01.exercise03;
 
 /**
  *
- * @author aluno
+ * @author Vinícius Kalach, RA: 211559
  */
 public class Employee {
     
-    private int cracha;
+    private int badge;
     private String name;
     private char bondtype;
     private float hourValue;
@@ -15,12 +15,12 @@ public class Employee {
     private float salary;
     private float discountValue;
 
-    public int getCracha() {
-        return cracha;
+    public int getBadge() {
+        return badge;
     }
 
-    public void setCracha(int cracha) {
-        this.cracha = cracha;
+    public void setBadge(int badge) {
+        this.badge = badge;
     }
 
     public String getName() {
@@ -69,6 +69,23 @@ public class Employee {
 
     public void setDiscountValue(float discountValue) {
         this.discountValue = discountValue;
+    }
+    
+    public float valorSalario(){
+        if (bondtype == 'H') {
+            return (hourValue * hourAmount) - discountValue;
+        } else {
+            return (salary - discountValue);
+        }
+    }
+    
+    public String imprimir(){
+        return "\nCrachá: " + badge + 
+                "\nNome: " + name +
+                "\nTipo de Vínculo: " + bondtype + 
+                "\nSalário: " + salary + 
+                "\nDesconto: " + discountValue + 
+                "\nValor a receber: " + valorSalario();
     }
     
 }
