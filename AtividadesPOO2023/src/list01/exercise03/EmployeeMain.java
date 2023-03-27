@@ -47,9 +47,6 @@ public class EmployeeMain {
                     System.out.println(e.imprimir());
                     break;
                 case 3:
-                    System.out.println("Saindo.");
-                    break;
-                case 4:
                     if (e.getBondtype() == 'H') {
                         System.out.println("Digite o novo ganho por hora do funcionário.");
                         e.setHourValue(Float.parseFloat(read.nextLine()));
@@ -59,6 +56,9 @@ public class EmployeeMain {
                         System.out.println("Digite o novo salário do funcionário.");
                         e.setSalary(Float.parseFloat(read.nextLine()));                        
                     }
+                    break;
+                case 4:
+                    System.out.println("Saindo.");
                     break;
                 default:
                     System.out.println("Erro: opção inválida.");
