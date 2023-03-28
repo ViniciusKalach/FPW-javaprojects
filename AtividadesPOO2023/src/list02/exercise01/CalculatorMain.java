@@ -33,16 +33,16 @@ public class CalculatorMain {
             
             switch (i) {
                 case 1:
-                    
+                    System.out.println("A soma deles será: " + c.soma(c.getNum1(), c.getNum2()));
                     break;
                 case 2:
-                    
+                    System.out.println("A subtração deles será: " + c.sbutracao(c.getNum1(), c.getNum2()));
                     break;
                 case 3:
-                    
+                    System.out.println("A multiplicação deles será: " + c.multiplicacao(c.getNum1(), c.getNum2()));
                     break;
                 case 4:
-                    
+                    System.out.println("A divisão deles será: " + c.divisao(c.getNum1(), c.getNum2()));
                     break;
                 case 5:
                     System.out.println("Saindo.");
