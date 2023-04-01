@@ -36,7 +36,8 @@ public class PolicyMain {
                     System.out.println("Digite o sexo.");
                     p.setSex(read.nextLine().charAt(0));
                     System.out.println("Digite o valor do automóvel.");
-                    p.setCarValue(read.nextFloat());
+                    p.setCarValue(read.nextDouble());
+                    read.nextLine();
                     break;
                 case 2:
                     System.out.println(p.imprimir());
