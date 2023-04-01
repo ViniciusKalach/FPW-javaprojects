@@ -1,13 +1,36 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package list02.exercise03;
 
 /**
  *
- * @author Bruno
+ * @author Vinícius Kalach, RA: 211559
  */
 public class Seller {
     
+    private int code;
+    private String name;
+    private double cPercentage;
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getcPercentage() {
+        return cPercentage;
+    }
+
+    public void setcPercentage(double cPercentage) {
+        this.cPercentage = cPercentage;
+    }
 }
