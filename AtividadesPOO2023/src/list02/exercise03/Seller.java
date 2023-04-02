@@ -9,6 +9,16 @@ public class Seller {
     private int code;
     private String name;
     private double cPercentage;
+    
+    public Seller(){
+        
+    }
+    
+    public Seller(int code, String name, double cPercentage) {
+        this.code = code;
+        this.name = name;
+        this.cPercentage = cPercentage;
+    }
 
     public int getCode() {
         return code;
@@ -33,4 +43,22 @@ public class Seller {
     public void setcPercentage(double cPercentage) {
         this.cPercentage = cPercentage;
     }
+    
+    public double calcularPagamentoComissao(double valorVenda) {
+        return valorVenda * cPercentage/100;
+    }
+    
+    public double calcularPagamentoComissao(double valorVenda, double desconto) {
+        return calcularPagamentoComissao(valorVenda) - desconto;
+    }
+    
+    public String imprimir(double valorVenda, double desconto) {
+        return "\nCódigo: " + code   + 
+                "\nNome: " + name +
+                "\nValor Venda: " + valorVenda + 
+                "\n% Comissao: " + cPercentage + 
+                "\nDesconto: " + desconto + 
+                "\nValor a pagar: " + calcularPagamentoComissao(valorVenda, desconto);
+    }
+   
 }
