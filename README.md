@@ -4,3 +4,5 @@
 
 ## Descrição
 Este repositório foi realizado durante o 3° semestre da faculdade (jan-jun 2023) para armazenar as atividades, na linguagem Java, que trabalham com o conceito de Programação Orientada à Objetos. 
+
+### (FPW. faculdade FACENS, disciplina de Programação Orientada a Objetos)
